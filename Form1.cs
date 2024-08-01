@@ -122,6 +122,80 @@ namespace Tela_facil
         }
 
         #endregion
+        #region navegadores
+        private void FireFoxNavegadoresMenu_Click(object sender, EventArgs e)
+        {
+            Process.Start("firefox.exe");
+        }
+        private void GoogleNavegadoresMenu_Click(object sender, EventArgs e)
+        {
+            Process.Start("chrome.exe");
 
+        }
+        private void EdgeMicrisoftNavegadoresMenu_Click(object sender, EventArgs e)
+        {
+            Process.Start("msedge.exe");
+        }
+
+        private void OperaNavegadoresMenu_Click(object sender, EventArgs e)
+        {
+            if (true)
+            {
+                MessageBox.Show("Você não possui o programa solicitado");
+
+            }
+        }
+
+
+
+        #endregion
+        #region noticias
+        private void OGloboNoticiasMenu_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://g1.globo.com/");
+        }
+
+        private void ODiaNoticiasMenu_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://odia.ig.com.br/portal");
+        }
+
+        private void IGNoticiasMenu_Click(object sender, EventArgs e)
+        {
+
+            Process.Start("https://www.ig.com.br/");
+        }
+
+        private void UOLNoticiasMenu_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://www.uol.com.br/");
+        }
+
+        private void TerraNoticiasMenu_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://www.terra.com.br/");
+        }
+
+        private void R7NoticiasMenu_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://www.r7.com/");
+        }
+
+        private void FolhaNoticiasMenu_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://www.folha.uol.com.br/");
+        }
+
+        private void BandNoticiasMenu_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://www.band.uol.com.br/");
+        }
+
+        private void GENoticiasMenu_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://ge.globo.com/");
+        }
+
+        #endregion
     }
 }

@@ -45,7 +45,14 @@ namespace Tela_facil
             this.Planilha1PlanilhasMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.Planilha2PlanilhasMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.Planilha3PlanilhasMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.Planilha4PlanilhasMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.Planilha5PlanilhasMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.ImoveisALPPlanilhasMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.NavegadoresMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.FireFoxNavegadoresMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.GoogleNavegadoresMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.EdgeMicrisofToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.OperaNavegadoresMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.NoticiasMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
             this.SobreMenu = new System.Windows.Forms.ToolStripMenuItem();
@@ -70,11 +77,19 @@ namespace Tela_facil
             this.btnCalendario = new System.Windows.Forms.Button();
             this.btnSkype = new System.Windows.Forms.Button();
             this.btnDataBase = new System.Windows.Forms.Button();
-            this.Planilha4PlanilhasMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.Planilha5PlanilhasMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.ImoveisALPPlanilhasMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.FireFoxNavegadoresMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.GoogleNavegadoresMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.OGloboNoticiasMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.ODiaNoticiasMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.IGNoticiasMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.UOLNoticiasMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.TerraNoticiasMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.R7NoticiasMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.FolhaNoticiasMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.BandNoticiasMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.GENoticiasMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripTextBox2 = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripTextBox3 = new System.Windows.Forms.ToolStripTextBox();
+            this.sergionpfgmailcomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -209,18 +224,79 @@ namespace Tela_facil
             this.Planilha3PlanilhasMenu.Text = "OBRA BARRA MANSA(724)";
             this.Planilha3PlanilhasMenu.Click += new System.EventHandler(this.Planilha3PlanilhasMenu_Click);
             // 
+            // Planilha4PlanilhasMenu
+            // 
+            this.Planilha4PlanilhasMenu.Name = "Planilha4PlanilhasMenu";
+            this.Planilha4PlanilhasMenu.Size = new System.Drawing.Size(224, 22);
+            this.Planilha4PlanilhasMenu.Text = "OBRA ILHA FELIPE";
+            this.Planilha4PlanilhasMenu.Click += new System.EventHandler(this.Planilha4PlanilhasMenu_Click);
+            // 
+            // Planilha5PlanilhasMenu
+            // 
+            this.Planilha5PlanilhasMenu.Name = "Planilha5PlanilhasMenu";
+            this.Planilha5PlanilhasMenu.Size = new System.Drawing.Size(224, 22);
+            this.Planilha5PlanilhasMenu.Text = "PLANILHA DIARIA FAZENDA";
+            this.Planilha5PlanilhasMenu.Click += new System.EventHandler(this.Planilha5PlanilhasMenu_Click);
+            // 
+            // ImoveisALPPlanilhasMenu
+            // 
+            this.ImoveisALPPlanilhasMenu.Name = "ImoveisALPPlanilhasMenu";
+            this.ImoveisALPPlanilhasMenu.Size = new System.Drawing.Size(224, 22);
+            this.ImoveisALPPlanilhasMenu.Text = "IMOVEIS ALP";
+            this.ImoveisALPPlanilhasMenu.Click += new System.EventHandler(this.ImoveisALPPlanilhasMenu_Click);
+            // 
             // NavegadoresMenu
             // 
             this.NavegadoresMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FireFoxNavegadoresMenu,
-            this.GoogleNavegadoresMenu});
+            this.GoogleNavegadoresMenu,
+            this.EdgeMicrisofToolStripMenuItem,
+            this.OperaNavegadoresMenu});
             this.NavegadoresMenu.Image = global::Tela_facil.Properties.Resources.internet_94;
             this.NavegadoresMenu.Name = "NavegadoresMenu";
             this.NavegadoresMenu.Size = new System.Drawing.Size(104, 23);
             this.NavegadoresMenu.Text = "Navegadores";
             // 
+            // FireFoxNavegadoresMenu
+            // 
+            this.FireFoxNavegadoresMenu.Name = "FireFoxNavegadoresMenu";
+            this.FireFoxNavegadoresMenu.Size = new System.Drawing.Size(146, 22);
+            this.FireFoxNavegadoresMenu.Text = "FireFox";
+            this.FireFoxNavegadoresMenu.Click += new System.EventHandler(this.FireFoxNavegadoresMenu_Click);
+            // 
+            // GoogleNavegadoresMenu
+            // 
+            this.GoogleNavegadoresMenu.Name = "GoogleNavegadoresMenu";
+            this.GoogleNavegadoresMenu.Size = new System.Drawing.Size(146, 22);
+            this.GoogleNavegadoresMenu.Text = "Google";
+            this.GoogleNavegadoresMenu.Click += new System.EventHandler(this.GoogleNavegadoresMenu_Click);
+            // 
+            // EdgeMicrisofToolStripMenuItem
+            // 
+            this.EdgeMicrisofToolStripMenuItem.Name = "EdgeMicrisofToolStripMenuItem";
+            this.EdgeMicrisofToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.EdgeMicrisofToolStripMenuItem.Text = "Edge Micrisof";
+            this.EdgeMicrisofToolStripMenuItem.Click += new System.EventHandler(this.EdgeMicrisoftNavegadoresMenu_Click);
+            // 
+            // OperaNavegadoresMenu
+            // 
+            this.OperaNavegadoresMenu.Name = "OperaNavegadoresMenu";
+            this.OperaNavegadoresMenu.Size = new System.Drawing.Size(146, 22);
+            this.OperaNavegadoresMenu.Text = "Opera";
+            this.OperaNavegadoresMenu.Click += new System.EventHandler(this.OperaNavegadoresMenu_Click);
+            // 
             // NoticiasMenu
             // 
+            this.NoticiasMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.OGloboNoticiasMenu,
+            this.ODiaNoticiasMenu,
+            this.IGNoticiasMenu,
+            this.UOLNoticiasMenu,
+            this.TerraNoticiasMenu,
+            this.R7NoticiasMenu,
+            this.FolhaNoticiasMenu,
+            this.BandNoticiasMenu,
+            this.GENoticiasMenu});
             this.NoticiasMenu.Image = global::Tela_facil.Properties.Resources.notícias_48;
             this.NoticiasMenu.Name = "NoticiasMenu";
             this.NoticiasMenu.Size = new System.Drawing.Size(78, 23);
@@ -238,12 +314,18 @@ namespace Tela_facil
             // 
             // SobreMenu
             // 
+            this.SobreMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripTextBox1,
+            this.toolStripTextBox2});
             this.SobreMenu.Name = "SobreMenu";
             this.SobreMenu.Size = new System.Drawing.Size(49, 23);
             this.SobreMenu.Text = "Sobre";
             // 
             // AjudaMenu
             // 
+            this.AjudaMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripTextBox3,
+            this.sergionpfgmailcomToolStripMenuItem});
             this.AjudaMenu.Image = global::Tela_facil.Properties.Resources.interrogação_emoji_48;
             this.AjudaMenu.Name = "AjudaMenu";
             this.AjudaMenu.Size = new System.Drawing.Size(66, 23);
@@ -479,38 +561,95 @@ namespace Tela_facil
             this.btnDataBase.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDataBase.UseVisualStyleBackColor = false;
             // 
-            // Planilha4PlanilhasMenu
+            // OGloboNoticiasMenu
             // 
-            this.Planilha4PlanilhasMenu.Name = "Planilha4PlanilhasMenu";
-            this.Planilha4PlanilhasMenu.Size = new System.Drawing.Size(224, 22);
-            this.Planilha4PlanilhasMenu.Text = "OBRA ILHA FELIPE";
-            this.Planilha4PlanilhasMenu.Click += new System.EventHandler(this.Planilha4PlanilhasMenu_Click);
+            this.OGloboNoticiasMenu.Name = "OGloboNoticiasMenu";
+            this.OGloboNoticiasMenu.Size = new System.Drawing.Size(180, 22);
+            this.OGloboNoticiasMenu.Text = "O Globo";
+            this.OGloboNoticiasMenu.Click += new System.EventHandler(this.OGloboNoticiasMenu_Click);
             // 
-            // Planilha5PlanilhasMenu
+            // ODiaNoticiasMenu
             // 
-            this.Planilha5PlanilhasMenu.Name = "Planilha5PlanilhasMenu";
-            this.Planilha5PlanilhasMenu.Size = new System.Drawing.Size(224, 22);
-            this.Planilha5PlanilhasMenu.Text = "PLANILHA DIARIA FAZENDA";
-            this.Planilha5PlanilhasMenu.Click += new System.EventHandler(this.Planilha5PlanilhasMenu_Click);
+            this.ODiaNoticiasMenu.Name = "ODiaNoticiasMenu";
+            this.ODiaNoticiasMenu.Size = new System.Drawing.Size(180, 22);
+            this.ODiaNoticiasMenu.Text = "O Dia";
+            this.ODiaNoticiasMenu.Click += new System.EventHandler(this.ODiaNoticiasMenu_Click);
             // 
-            // ImoveisALPPlanilhasMenu
+            // IGNoticiasMenu
             // 
-            this.ImoveisALPPlanilhasMenu.Name = "ImoveisALPPlanilhasMenu";
-            this.ImoveisALPPlanilhasMenu.Size = new System.Drawing.Size(224, 22);
-            this.ImoveisALPPlanilhasMenu.Text = "IMOVEIS ALP";
-            this.ImoveisALPPlanilhasMenu.Click += new System.EventHandler(this.ImoveisALPPlanilhasMenu_Click);
+            this.IGNoticiasMenu.Name = "IGNoticiasMenu";
+            this.IGNoticiasMenu.Size = new System.Drawing.Size(180, 22);
+            this.IGNoticiasMenu.Text = "IG";
+            this.IGNoticiasMenu.Click += new System.EventHandler(this.IGNoticiasMenu_Click);
             // 
-            // FireFoxNavegadoresMenu
+            // UOLNoticiasMenu
             // 
-            this.FireFoxNavegadoresMenu.Name = "FireFoxNavegadoresMenu";
-            this.FireFoxNavegadoresMenu.Size = new System.Drawing.Size(180, 22);
-            this.FireFoxNavegadoresMenu.Text = "FireFox";
+            this.UOLNoticiasMenu.Name = "UOLNoticiasMenu";
+            this.UOLNoticiasMenu.Size = new System.Drawing.Size(180, 22);
+            this.UOLNoticiasMenu.Text = "UOL";
+            this.UOLNoticiasMenu.Click += new System.EventHandler(this.UOLNoticiasMenu_Click);
             // 
-            // GoogleNavegadoresMenu
+            // TerraNoticiasMenu
             // 
-            this.GoogleNavegadoresMenu.Name = "GoogleNavegadoresMenu";
-            this.GoogleNavegadoresMenu.Size = new System.Drawing.Size(180, 22);
-            this.GoogleNavegadoresMenu.Text = "Google";
+            this.TerraNoticiasMenu.Name = "TerraNoticiasMenu";
+            this.TerraNoticiasMenu.Size = new System.Drawing.Size(180, 22);
+            this.TerraNoticiasMenu.Text = "Terra";
+            this.TerraNoticiasMenu.Click += new System.EventHandler(this.TerraNoticiasMenu_Click);
+            // 
+            // R7NoticiasMenu
+            // 
+            this.R7NoticiasMenu.Name = "R7NoticiasMenu";
+            this.R7NoticiasMenu.Size = new System.Drawing.Size(180, 22);
+            this.R7NoticiasMenu.Text = "R7";
+            this.R7NoticiasMenu.Click += new System.EventHandler(this.R7NoticiasMenu_Click);
+            // 
+            // FolhaNoticiasMenu
+            // 
+            this.FolhaNoticiasMenu.Name = "FolhaNoticiasMenu";
+            this.FolhaNoticiasMenu.Size = new System.Drawing.Size(180, 22);
+            this.FolhaNoticiasMenu.Text = "Folha";
+            this.FolhaNoticiasMenu.Click += new System.EventHandler(this.FolhaNoticiasMenu_Click);
+            // 
+            // BandNoticiasMenu
+            // 
+            this.BandNoticiasMenu.Name = "BandNoticiasMenu";
+            this.BandNoticiasMenu.Size = new System.Drawing.Size(180, 22);
+            this.BandNoticiasMenu.Text = "Band";
+            this.BandNoticiasMenu.Click += new System.EventHandler(this.BandNoticiasMenu_Click);
+            // 
+            // GENoticiasMenu
+            // 
+            this.GENoticiasMenu.Name = "GENoticiasMenu";
+            this.GENoticiasMenu.Size = new System.Drawing.Size(180, 22);
+            this.GENoticiasMenu.Text = "GE";
+            this.GENoticiasMenu.Click += new System.EventHandler(this.GENoticiasMenu_Click);
+            // 
+            // toolStripTextBox1
+            // 
+            this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStripTextBox1.Name = "toolStripTextBox1";
+            this.toolStripTextBox1.Size = new System.Drawing.Size(100, 23);
+            this.toolStripTextBox1.Text = "Autor Sérgio";
+            // 
+            // toolStripTextBox2
+            // 
+            this.toolStripTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStripTextBox2.Name = "toolStripTextBox2";
+            this.toolStripTextBox2.Size = new System.Drawing.Size(100, 23);
+            this.toolStripTextBox2.Text = "Versão 1.1";
+            // 
+            // toolStripTextBox3
+            // 
+            this.toolStripTextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStripTextBox3.Name = "toolStripTextBox3";
+            this.toolStripTextBox3.Size = new System.Drawing.Size(100, 23);
+            this.toolStripTextBox3.Text = "(21)96606-9302";
+            // 
+            // sergionpfgmailcomToolStripMenuItem
+            // 
+            this.sergionpfgmailcomToolStripMenuItem.Name = "sergionpfgmailcomToolStripMenuItem";
+            this.sergionpfgmailcomToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.sergionpfgmailcomToolStripMenuItem.Text = "sergionpf@gmail.com";
             // 
             // FormPrincipal
             // 
@@ -599,6 +738,21 @@ namespace Tela_facil
         private System.Windows.Forms.ToolStripMenuItem ImoveisALPPlanilhasMenu;
         private System.Windows.Forms.ToolStripMenuItem FireFoxNavegadoresMenu;
         private System.Windows.Forms.ToolStripMenuItem GoogleNavegadoresMenu;
+        private System.Windows.Forms.ToolStripMenuItem EdgeMicrisofToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem OperaNavegadoresMenu;
+        private System.Windows.Forms.ToolStripMenuItem OGloboNoticiasMenu;
+        private System.Windows.Forms.ToolStripMenuItem ODiaNoticiasMenu;
+        private System.Windows.Forms.ToolStripMenuItem IGNoticiasMenu;
+        private System.Windows.Forms.ToolStripMenuItem UOLNoticiasMenu;
+        private System.Windows.Forms.ToolStripMenuItem TerraNoticiasMenu;
+        private System.Windows.Forms.ToolStripMenuItem R7NoticiasMenu;
+        private System.Windows.Forms.ToolStripMenuItem FolhaNoticiasMenu;
+        private System.Windows.Forms.ToolStripMenuItem BandNoticiasMenu;
+        private System.Windows.Forms.ToolStripMenuItem GENoticiasMenu;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox2;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox3;
+        private System.Windows.Forms.ToolStripMenuItem sergionpfgmailcomToolStripMenuItem;
     }
 }
 
