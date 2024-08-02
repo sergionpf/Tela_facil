@@ -107,5 +107,20 @@
   <ItemGroup>
     <None Include="Resources\icons8-calendar-32.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BetoGlioche.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beto1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BETO_RJ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beto4.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

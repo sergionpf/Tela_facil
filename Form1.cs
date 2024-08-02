@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +17,7 @@ namespace Tela_facil
         public FormPrincipal()
         {
             InitializeComponent();
+           
         }
 
         #region idioma
@@ -194,6 +196,126 @@ namespace Tela_facil
         private void GENoticiasMenu_Click(object sender, EventArgs e)
         {
             Process.Start("https://ge.globo.com/");
+        }
+
+        #endregion
+
+        #region Buton
+        private void btnDataBase_Click(object sender, EventArgs e)
+        {
+            Process.Start("C:\\Portaveis\\PortableApps\\DatabaseBrowserPortable\\DatabaseBrowserPortable.exe");
+        }
+
+        private void btnSkype_Click(object sender, EventArgs e)
+        {
+            Process.Start("skype");
+        }
+
+        private void btnCalendario_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://calendar.google.com/calendar");
+        }
+
+        private void btnMeusDocumentos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnWord_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExcel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDctf_Click(object sender, EventArgs e)
+        {
+            Process.Start("C:\\Arquivos de Programas RFB\\DCTF Mensal 3.5\\DCTFMensal35.exe");
+        }
+
+        private void btnCaptura_Click(object sender, EventArgs e)
+        {
+            Process proc = new Process();
+            proc.StartInfo.FileName = ("C:\\Windows\\sysnative\\SnippingTool.exe");
+            proc.Start();
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Obrigado por usar o nosso sistema");
+            Application.Exit();
+        }
+               
+        private void btnEfdContribuicao_Click(object sender, EventArgs e)
+        {
+            Process.Start(@"C:\Atalhos");
+        }
+
+        private void btnSpedContabil_Click(object sender, EventArgs e)
+        {
+            Process.Start("C:\\Arquivos de Programas RFB\\Programas SPED\\SpedContabil\\Sped Contabil.exe");
+        }
+
+        private void btnpEfdIcmsIpi_Click(object sender, EventArgs e)
+        {
+            Process.Start(@"C:\Arquivos de Programas RFB\Programas SPED\Fiscal\spedfiscal.exe");
+        }
+
+        private void btnEcfSped_Click(object sender, EventArgs e)
+        {
+            Process.Start(@"C:\Arquivos de Programas RFB\Programas SPED\ECF\SpedEcf.exe");
+        }
+        #endregion
+        #region RMG
+        private void btnAgropec_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo processStartInfo = new ProcessStartInfo("cmd.exe");
+            processStartInfo.RedirectStandardInput = true;
+            processStartInfo.RedirectStandardOutput = true;
+            processStartInfo.UseShellExecute = false;
+            Process process = Process.Start(processStartInfo);
+            
+            process.StandardInput.WriteLine(@"l:");
+            process.StandardInput.WriteLine(@"cd agropec");
+            process.StandardInput.WriteLine("sccmp00.exe");
+            //fechar prompt de comando
+            process.StandardInput.WriteLine("exit");
+            
+            
+            
+        }
+
+        private void btnALP_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo processStartInfo = new ProcessStartInfo("cmd.exe");
+            processStartInfo.RedirectStandardInput = true;
+            processStartInfo.RedirectStandardOutput = true;
+            processStartInfo.UseShellExecute = false;
+            Process process = Process.Start(processStartInfo);
+            process.StandardInput.WriteLine(@"l:");
+            process.StandardInput.WriteLine(@"cd alppart");
+            process.StandardInput.WriteLine("sccmp00.exe");
+            //fechar prompt de comando
+            process.StandardInput.WriteLine("exit");
+        }
+
+        private void btnCarfacil_Click(object sender, EventArgs e)
+        {
+            
+            ProcessStartInfo processStartInfo = new ProcessStartInfo("cmd.exe");
+            processStartInfo.RedirectStandardInput = true;
+            processStartInfo.RedirectStandardOutput = true;
+            processStartInfo.UseShellExecute = false;
+            Process process = Process.Start(processStartInfo);
+            process.StandardInput.WriteLine(@"l:");
+            process.StandardInput.WriteLine(@"cd carfacil");
+            process.StandardInput.WriteLine("sccmp00.exe");
+            //fechar prompt de comando
+            process.StandardInput.WriteLine("exit");
+
         }
 
         #endregion
